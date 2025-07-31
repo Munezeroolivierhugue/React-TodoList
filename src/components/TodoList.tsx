@@ -4,7 +4,9 @@ import TodoItem from './TodoItem'
 function TodoList() {
   return (
     <div>
-        <TodoItem />
+        <TodoItem word="IAmHere"/>
+        <TodoItem word="reactjsexample1"/>
+        <TodoItem word="A To do app developed using to consolidate your knowledge about React"/>
     </div>
   )
 }

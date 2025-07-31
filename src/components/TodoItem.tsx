@@ -1,17 +1,22 @@
-import React from 'react'
-import DeleteButton from './ui/DeleteButton'
+import React from "react";
+import DeleteButton from "./ui/DeleteButton";
 
-function TodoItem() {
+interface TodoItemProps {
+    word: string;
+  }
+
+function TodoItem({ word }: TodoItemProps) {
+  
   return (
     <>
-    <div className='flex flex-row gap-2'>
+      <div className="flex flex-row gap-2">
         <input type="checkbox" name="isDone" id="checkbox" />
-        <label htmlFor="isDone">IAmHere</label>
+        <label htmlFor="isDone">{word}</label>
         <DeleteButton />
-    </div>
-    <hr/>
+      </div>
+      <hr className="text-gray-300"/>
     </>
-  )
+  );
 }
 
-export default TodoItem
+export default TodoItem;
